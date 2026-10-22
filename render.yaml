@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mnemos-memory-lab
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    healthCheckPath: /api/health
+    disk:
+      name: mnemos-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:////opt/render/project/src/data/mnemos.db
