@@ -1,1 +1,6 @@
-__pycache__/\n*.py[cod]\n.venv/\n.env\nmnemos.db\n.DS_Store\n
+__pycache__/
+*.py[cod]
+.venv/
+.env
+mnemos.db
+.DS_Store
