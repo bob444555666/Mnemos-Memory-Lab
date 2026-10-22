@@ -1,0 +1,8 @@
+name = "mnemos-memory-lab"
+main = "worker.js"
+compatibility_date = "2026-10-21"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mnemos-memory-lab"
+database_id = "bac8843c-4037-41e0-90d0-7fa9040ad66b"
